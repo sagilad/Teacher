@@ -2,6 +2,9 @@
 <p dir='rtl' align='center'><b>
 Teacher - טיצ'ר, מאגר מורים פרטיים
   <b/></p>
+  
+https://play.google.com/store/apps/details?id=com.giladsagi.privateteacher
+
 <p dir='rtl' align='right'>
 מאגר מורים פרטיים במגוון תחומים
 <p dir='rtl' align='right'>
