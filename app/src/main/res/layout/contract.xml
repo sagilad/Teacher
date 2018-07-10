@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/ContractHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="תקנון"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ContractHeader"
+        android:layout_marginTop="25dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/allContract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="26dp"
+                android:text="@string/allContract"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/scrollView1"
+        android:layout_marginTop="22dp"
+        android:background="@color/white"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="מאשר שקראתי את התקנון ומסכים לכל פרטיו" />
+
+    <Button
+        android:id="@+id/buttonNo2"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonYes1"
+        android:layout_alignBottom="@+id/buttonYes1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:text="בטל"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonYes1"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="35dp"
+        android:text="אשר"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

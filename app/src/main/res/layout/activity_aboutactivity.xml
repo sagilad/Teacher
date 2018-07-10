@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.giladsagi.privateteacher.SplashActivity" 
+    android:background="@drawable/green_bg" >
+
+<ImageView
+        android:id="@+id/imageViewTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp"
+        android:src="@drawable/teacher" />
+
+    <TextView
+        android:id="@+id/ContractHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewTeacher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="מאגר מורים במגוון תחומים"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ContractHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="Powerd By: S.G"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+    
+<ImageButton
+        android:id="@+id/emailbutton"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/email" />
+
+<TextView
+    android:id="@+id/feedback"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/emailbutton"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="48dp"
+    android:text="נשמח לשמוע את דעתכם על האפליקציה, כולל רעיונות לשיפור" />
+
+</RelativeLayout>

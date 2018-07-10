@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Teacher</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="stra_choose_city">
+        <item>All</item>
+        <item>Beer Sheva</item>
+        <item>Haifa</item>
+        <item>Jerusalem</item>
+        <item>Tel Aviv</item>
+    </string-array>
+    <string-array name="stra_subject">
+        <item>All</item>
+        <item>English</item>
+        <item>Math</item>
+        <item>Java</item>
+        <item>Web</item>
+    </string-array>
+    <string-array name="stra_age">
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="stra_price">
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+    </string-array>
+
+    <string name="test">beer sheva \n tel aviv \n haifa</string>
+
+    <string name="str_c_city">אזור לימוד</string>
+    <string name="str_c_subject">תחום לימוד</string>
+    <string name="Areas"><u>אזורי לימוד</u></string>
+    <string name="Fields"><u>תחומי לימוד</u></string>
+    <string name="AreasList">אזורים</string>
+    <string name="FieldsList">תחומים</string>
+    <string name="b_search">חפש</string>
+    <string name="b_entrance">חדר מורים</string>
+    <string name="b_students">Students entrance</string>
+    <string name="powerd_by">Powerd by</string>
+    <string name="sagilad">sagilad</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="city">city</string>
+    <string name="subject">subject</string>
+    <string name="title_activity_entrance">EntranceActivity</string>
+    <string name="logon_students">Students registration</string>
+    <string name="logon_teachers">Teachers registration</string>
+    <string name="logon">Log on</string>
+    <string name="title_activity_add_teacher">AddTeacher</string>
+    <string name="full_name">שם מלא</string>
+    <string name="city_h"> עיר</string>
+    <string name="subject_h"> מקצועות</string>
+    <string name="general_info"> כללי</string>
+    <string name="add">הוסף</string>
+    <string name="title_activity_techer_details">פרטי המורה</string>
+    <string name="teacher_details"><b><u>פרטי המורה</u></b></string>
+
+    <string name="details_name"><b>שם</b></string>
+    <string name="details_age"><b>גיל</b></string>
+    <string name="details_gender"><b>מין</b></string>
+    <string name="details_price"><b>מחיר לשעה</b></string>
+    <string name="details_rat"><b>דירוג</b></string>
+    <string name="details_tel"><b>טלפון</b></string>
+    <string name="details_cities"><u><b>אזורי לימוד</b></u></string>
+    <string name="details_subject"><u><b>תחומי לימוד</b></u></string>
+    <string name="details_info"><u><b>מידע נוסף</b></u></string>
+
+    <string name="age"> גיל </string>
+    <string name="price"> מחיר לשעה </string>
+    <string name="gender"> מין </string>
+    <string name="male">זכר</string>
+    <string name="female">נקבה</string>
+    <string name="telephone"> טלפון</string>
+    <string name="title_activity_dbtest">תוצאות החיפוש</string>
+    <string name="register1">שלום הכניסה למורים בלבד</string>
+    <string name="register2">האם ברצונך להירשם</string>
+    <string name="title_activity_city_choose">CityChoose</string>
+    <string name="title_activity_splash">Teacher</string>
+    <string name="allContract">השימוש ביישמון כפופה להסכמתך לתנאי השימוש כפי שיפורטו להלן ("תנאי השימוש"). המילה "שימוש" תכלול את הפעולות הבאות: ביקור ביישומון ו/או גלישה ביישומון ו/או רישום ביישומון ו/או כל שימוש אחר ביישומון. השימוש בלשון זכר הינו מטעמי נוחיות בלבד ויש לקרוא את האמור בלשון זכר כאילו נאמר גם בלשון נקבה.
+
+בשימושך ביישומון אתה מסכים לפעול על פי התנאים המפורטים בתנאי השימוש ומאשר בזאת כי קראת והינך מסכים לתנאים אלו.
+
+כל הפרסומים המופיעים ביישומון הינם בגדר המלצה בלבד ואין בהם כדי לחייב את המחזיקים ביישומון Teacher (להלן: יישומון Teacher) ו/או להטיל עליהם אחריות מכל סוג שהוא ביחס לפעילות הגולשים בהתאם לאותה המלצה. האחריות על תוכנם של הפרסומים היא על המפרסמים עצמם. יישומון Teacher לא יישא בכל נזק מכל סוג שהוא שיגרם למשתמש כתוצאה מהסתמכות על אותם פרסומים.
+
+יישומון Teacher דוחה כל אחריות לשימוש ביישמון לרבות הימצאותם של וירוסים או תוכנות זדוניות, דייקנות ואיכות המידע שביישמון, התאמת המידע לכל מטרה, שלמות ואמינות. יישומון Teacher אינו מתחייב שהשימוש יהיה נקי מהפרעות ותקלות כלשהן.
+יישומון Teacher לא יהיה אחראי כלפי המשתמש ביישמון או כל אדם אחר, במישרין או בעקיפין, לכל נזק ישיר או עקיף, הנובע משימוש ביישמון או בשל חוסר שימוש ביישמון הנובע מתקלה כלשהי. הדבר כולל אובדן מידע ו/או נזק למכשירך ו/או למידע המאוחסן במכשירך ולכל נזק אחר בין אם צפוי או שאינו צפוי. הינך מצהיר בזאת כי הינך האחראי הבלעדי לכל שימוש שהינך עושה ביישומון ו/או בשירותים שהוא מציע.
+
+כחלק מתהליך הרשמת מורה ו/או פרסום כל תוכן אחר ביישמון, תידרש למסור פרטים אישיים כגון: שם מלא, גיל, דואר אלקטרוני, טלפון ועוד. מסירת נתונים אלו אינה מחייבת עפ"י חוק, אבל ללא מסירת חלק מהנתונים (הנתונים המוגדרים כ"חובה"), לא תוכל להמשיך ברישום ולהשתמש בשירותי היישמון. יישומון Teacher ידרוש נתונים המוגדרים כ"חובה" רק עבור נתונים הנחוצים להמשך הרישום.
+
+השימוש ביישמון ובאפשרויות המוצעות בו הינו על אחריות המשתמש בלבד. על המשתמש מוטלת האחריות לבדוק את התוכן ולאמתו לפני שימוש בתוכן למטרה כלשהי. יישומון Teacher לא ישא באחריות לאמיתות ולתקפות התוכן המפורסם במודעות ובפרופילי המשתמשים.
+השימוש ביישומון מוגבל לפרסום מורה פרטי בלבד. אין להשתמש ביישמון למטרה אחרת וכל שימוש ביישומון למטרה זרה כאמור, ולרבות פניה למפרסם המודעה שלא על מנת להתענין בשירות שפרסם יהווה משום שימוש בניגוד לתנאי התקנון, על כל המשתמע מכך.
+
+צוות יישומון Teacher אינו אחראי על תוכן הפרסומים בו, האחריות על תוכנם של הפרסומים היא על הכותבים ו/או המפרסמים בעצמם. צוות היישמון לא ישא בכל אחריות לנזק, אובדן, עוגמת נפש וכל פגע אחר מכל סוג שהוא שייגרם למשתמש כתוצאה מהסתמכות על האמור בפרסומים.
+
+יישומון Teacher מאבטח את המידע המצוי בו. על אף המאמצים המושקעים בכך, אין אנו יכולים להתחייב כי לא תתבצע חדירה לנתונים אלו.
+
+צוות היישומון הינו בעל זכויות היוצרים והקניין הרוחני ביישמון באופן בלעדי. במסגרת זו נכללים, בין היתר, עיצובו הגראפי של היישמון, מבנה היישמון, הטקסטים המופיעים בו , וכן קבצים ויישומים. חל איסור מוחלט על העתקה , הפצה, הצגה, פרסום או העברה של הנ"ל או חלק מהם, לרבות כל תוכן או פרופיל מכל מקום ביישמון אלא אם ניתנה לכך הסכמת צוות היישמון מראש ובכתב.
+
+מובהר בזאת, כי עם קבלת תנאי שימוש אלו כל המפרסם מודעה ביישמון זה מעביר לצוות היישמון את כל זכויות הקניין הרוחני בקשר עם מודעה כאמור (לרבות תוכן המודעה), לרבות זכויות יוצרים וזכויות התביעה בגין כל הפרה של זכויות כאמור.
+על היישמון חלים חוקי מדינת ישראל במלואם והם בלבד.
+
+</string>
+    <string name="title_activity_aboutactivity">Aboutactivity</string>
+
+</resources>

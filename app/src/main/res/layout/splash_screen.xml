@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_bg" >
+
+    <ImageView
+        android:id="@+id/imageViewTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp"
+        android:src="@drawable/teacher" />
+
+    <TextView
+        android:id="@+id/ContractHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewTeacher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="מאגר מורים במגוון תחומים"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/allContract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewTeacher"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="59dp"
+        android:text="Powerd By:  S.G"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

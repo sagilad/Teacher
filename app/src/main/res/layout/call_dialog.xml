@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/CallHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="האם ברצונך להתקשר למורה? "
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/NoCall"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/CallHeader"
+        android:layout_below="@+id/CallHeader"
+        android:layout_marginTop="22dp"
+        android:text="לא"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/YesCall"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NoCall"
+        android:layout_alignBottom="@+id/NoCall"
+        android:layout_alignLeft="@+id/CallHeader"
+        android:text="כן"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

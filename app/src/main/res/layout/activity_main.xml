@@ -1,0 +1,53 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainmenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:foreground="@drawable/shape_window_dim" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/board5"
+    android:paddingTop="35dp"
+    tools:context="com.giladsagi.privateteacher.MainActivity" >
+
+    <ImageButton
+        android:id="@+id/addTeacherButton"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:background="@drawable/add_teacher"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="ButtonEntranceMethod"
+        android:layout_alignBottom="@+id/imageButtonSearch"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/aboutButton1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/information_icon"
+        android:onClick="ButtonInfoMethod" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSearch"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/search"
+        android:onClick="SearchMethod"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp" />
+
+</RelativeLayout>
+
+</FrameLayout>

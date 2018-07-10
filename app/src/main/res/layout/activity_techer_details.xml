@@ -1,0 +1,344 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_bg"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="40dp"
+    tools:context="com.giladsagi.privateteacher.TecherDetails" >
+
+    <TextView
+        android:id="@+id/teacher_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/teacher_details"
+        android:textSize="30dp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageViewTeacher"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/teacher_details"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/profile"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/imageViewTeacher"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/under_line" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewTeacher"
+        android:layout_toLeftOf="@+id/imageViewTeacher"
+        android:layout_marginRight="3dp"
+        android:text="@string/details_name"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textName"
+        android:layout_below="@+id/textName"
+        android:text="@string/details_age"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textAge"
+        android:layout_below="@+id/textAge"
+        android:text="@string/details_gender"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/ContractHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/t_price"
+        android:layout_alignBottom="@+id/t_price"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/t_price"
+        android:text="ש&quot;ח"
+        android:textColor="@color/white" />
+
+    
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textGender"
+        android:layout_below="@+id/textGender"
+        android:text="@string/details_price"
+        android:textColor="@color/white" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView3"
+    android:orientation="vertical"
+    android:layout_alignParentRight="true">
+
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_cities"
+        android:layout_gravity="right"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/citieslist"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:textColor="@color/white" />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linearSubjects"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView3"
+    android:orientation="vertical"
+    android:layout_alignParentLeft="true">
+    <TextView
+        android:id="@+id/textSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_subject"
+        android:textColor="@color/white"
+        android:layout_gravity="right" />
+    <TextView
+        android:id="@+id/subjectslist"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/linearSubjects"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/under_line" />
+
+    <TextView
+        android:id="@+id/textRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textPrice"
+        android:layout_below="@+id/textPrice"
+        android:text="@string/details_rat"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textRating"
+        android:layout_below="@+id/textRating"
+        android:text="@string/details_tel"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:layout_above="@+id/t_age"
+        android:layout_toLeftOf="@+id/textTel"
+        android:paddingRight="80dp"
+        android:layout_alignBottom="@+id/textName"
+        android:layout_alignBaseline="@+id/textName" />
+
+    <TextView
+        android:id="@+id/t_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textGender"
+        android:layout_alignRight="@+id/teacher_name"
+        android:paddingRight="80dp"
+        android:text="Age"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/t_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGender"
+        android:layout_alignBottom="@+id/textGender"
+        android:layout_toLeftOf="@+id/textTel"
+        android:paddingRight="80dp"
+        android:text="Gender"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/t_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textRating"
+        android:paddingRight="80dp"
+        android:layout_toLeftOf="@+id/textTel"
+        android:text="Price"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/t_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textRating"
+        android:layout_alignBottom="@+id/textRating"
+        android:paddingRight="80dp"
+        android:layout_toLeftOf="@+id/textTel"
+        android:maxLength="7"
+        android:text="Rat"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/t_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="80dp"
+        android:layout_alignBaseline="@+id/textTel"
+        android:layout_alignBottom="@+id/textTel"
+        android:layout_toLeftOf="@+id/textTel"
+        android:text="Telephone"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/moreinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView4"
+        android:text="@string/details_info"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/moreinfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageView2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/t_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="Info"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imAddSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:layout_toRightOf="@+id/scrollView1"
+        android:src="@android:drawable/btn_star" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="71dp"
+        android:layout_toRightOf="@+id/scrollView1"
+        android:src="@android:drawable/btn_star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="67dp"
+        android:layout_toRightOf="@+id/scrollView1"
+        android:src="@drawable/star" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_above="@+id/linearbuttons"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/under_line" />
+
+<LinearLayout
+    android:id="@+id/linearbuttons"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ratingbutton"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/emailbutton"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/email" />
+
+    <ImageButton
+        android:id="@+id/smsbutton"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="50dp"
+        android:onClick="smsMethod"
+        android:background="@drawable/sms" />
+
+    <ImageButton
+        android:id="@+id/callbutton"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="50dp"
+        android:onClick="callMethod"
+        android:background="@drawable/call" />
+
+</LinearLayout>
+
+
+</RelativeLayout>

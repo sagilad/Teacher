@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/emailTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:text="To:"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/emailSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/emailTo"
+        android:layout_marginTop="24dp"
+        android:text="Subject:"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/TextTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emailTo"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/emailSubject"
+        android:text="textEmailAddress"
+        android:textColor="@color/white" >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emailSubject"
+        android:layout_alignBottom="@+id/emailSubject"
+        android:layout_toRightOf="@+id/emailSubject"
+        android:ems="10"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editSubject" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="Type your message here..."
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonSendEmail"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:text="Send" />
+
+</RelativeLayout>

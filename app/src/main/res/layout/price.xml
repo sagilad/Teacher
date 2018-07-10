@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/choose_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="ציין מחיר לשעה: "
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/spPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/choose_price"
+        android:layout_alignRight="@+id/choose_price"
+        android:layout_below="@+id/choose_price"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white" >
+
+    </EditText>
+    
+        <Button
+        android:id="@+id/OkPrice"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/spPrice"
+		android:layout_marginTop="32dp"
+        android:text="אשר"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

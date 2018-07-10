@@ -1,0 +1,48 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+    <style name="NewDialog" parent="@android:style/Theme.Dialog">
+
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowTitleStyle">@null</item>
+    <item name="android:colorBackground">#ffffff</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    <item name="android:backgroundDimEnabled">true</item>
+    <item name="android:width">40dip</item>
+    <item name="android:height">40dip</item>
+     <item name="android:textColor">#FFFFFF</item>
+
+</style>
+
+<style name="DialogAnimation_2">
+    <item name="android:windowEnterAnimation">@anim/slide_up</item>
+    <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowCloseOnTouchOutside">true</item>
+
+</style>
+
+</resources>

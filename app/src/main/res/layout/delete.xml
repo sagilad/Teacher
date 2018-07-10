@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/ContractHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:text="אתה בטוח שאתה רוצה למחוק את המורה? "
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        android:id="@+id/NoDelete"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ContractHeader"
+        android:layout_below="@+id/ContractHeader"
+        android:layout_marginTop="22dp"
+        android:text="לא"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/YesDelete"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NoDelete"
+        android:layout_alignBottom="@+id/NoDelete"
+        android:layout_alignLeft="@+id/ContractHeader"
+        android:text="כן"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

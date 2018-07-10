@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ratingHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="דרג את המורה"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ratingHeader"
+        android:layout_marginTop="22dp"
+        android:text="מקצועיות"
+        android:textColor="@color/white" />
+
+    <RatingBar
+        android:id="@+id/ratingBarPro"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationY="180"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pro"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/availibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ratingBarPro"
+        android:layout_marginTop="20dp"
+        android:text="זמינות"
+        android:textColor="@color/white" />
+
+    <RatingBar
+        android:id="@+id/ratingBarAvail"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationY="180"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/availibility"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/teachingattr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ratingBarAvail"
+        android:layout_marginTop="20dp"
+        android:text="כושר הוראה"
+        android:textColor="@color/white" />
+
+    <RatingBar
+        android:id="@+id/ratingBarTeach"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationY="180"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/teachingattr"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/textViewGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ratingBarTeach"
+        android:layout_marginTop="20dp"
+        android:text="ציון כללי"
+        android:textColor="@color/white" />
+
+    <RatingBar
+        android:id="@+id/ratingBarGeneral"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationY="180"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewGeneral"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <Button
+        android:id="@+id/buttonRate"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBarGeneral"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="דרג"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/scorePro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ratingBarPro"
+        android:layout_toLeftOf="@+id/ratingBarPro"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/scoreAvil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/teachingattr"
+        android:layout_alignRight="@+id/scorePro"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/scoreTeach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewGeneral"
+        android:layout_alignRight="@+id/scoreAvil"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/scoreGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ratingBarGeneral"
+        android:layout_alignLeft="@+id/scoreTeach"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
